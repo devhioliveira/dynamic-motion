@@ -1,0 +1,9 @@
+/build/
+/.signing/
+__pycache__/
+*.apk
+*.apk.idsig
+*.dex
+*.jks
+*.p12
+app_base64.txt
