@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.dynamicmotion.zoryx" android:versionCode="6" android:versionName="3.0">
+    <uses-sdk android:minSdkVersion="35" android:targetSdkVersion="35" />
+    <application android:label="Dynamic Motion 3.0" android:allowBackup="false"
+        android:extractNativeLibs="false" android:theme="@android:style/Theme.Material.NoActionBar">
+        <meta-data android:name="xposedmodule" android:value="true" />
+        <meta-data android:name="xposedminversion" android:value="93" />
+        <meta-data android:name="xposeddescription" android:value="Dynamic Motion island inside Samsung SystemUI" />
+        <meta-data android:name="xposedscope" android:value="com.android.systemui" />
+        <activity android:name=".nowbar.ModuleActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
